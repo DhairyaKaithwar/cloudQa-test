@@ -1,12 +1,41 @@
-# React + Vite
+#  Playwright Form Automation Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses Playwright to automatically test form input fields on the [CloudQA Automation Practice Form](https://app.cloudqa.io/home/AutomationPracticeForm).
 
-Currently, two official plugins are available:
+It simulates a real user by typing into the fields with visible delays.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  What it Does
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Opens the practice form page
+- Fills in three fields:
+  - First Name
+  - Last Name
+  - Email
+- Types each character with a short delay
+- Verifies the values are correctly filled
+
+---
+
+##  Setup Instructions
+
+Follow these steps to clone and run the test on any system:
+
+### 1. Clone the Repository
+
+### 2. In terminal, run the following commands
+```
+git clone https://github.com/DhairyaKaithwar/cloudQa-test.git
+cd cloudQa-test
+npm install
+npx playwright install
+
+-- to run tests--
+npx playwright test --headed
+OR
+npx playwright test 
+```
+
+this would run the tests.....
+
